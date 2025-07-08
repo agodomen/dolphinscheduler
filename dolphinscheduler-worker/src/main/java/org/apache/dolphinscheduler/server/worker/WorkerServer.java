@@ -68,7 +68,8 @@ public class WorkerServer implements IStoppable {
     @Autowired
     private MessageRetryRunner messageRetryRunner;
 
-    @Autowired
+    // @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
+    @Autowired(required = false)
     private MetricsProvider metricsProvider;
 
     /**

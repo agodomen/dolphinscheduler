@@ -71,10 +71,10 @@ alert:
   port: 50052
   # Mark each alert of alert server if late after x milliseconds as failed.
   # Define value is (0 = infinite), and alert server would be waiting alert result.
-  wait-timeout: 10
-  max-heartbeat-interval: 59s
+  wait-timeout: 0
+  max-heartbeat-interval: 60s
   # The maximum number of alerts that can be processed in parallel
-  sender-parallelism: 101
+  sender-parallelism: 100
 
 registry:
   type: zookeeper
